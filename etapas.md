@@ -56,7 +56,8 @@
 
 ### 2. Ao adicionar o IP da VM no navegador do host, já é possível enxergar o HTML do NGINX:
 
-![NGINX](imagens/ubuntu-ip.png) 🔺 _Nenhuma alteração foi feita na porta. Por padrão, a comunicação foi setada para a porta 80 (http)._
+![NGINX](imagens/ubuntu-ip.png)
+🔺 _Nenhuma alteração foi feita na porta. Por padrão, a comunicação foi setada para a porta 80 (http)._
 
 ## 🌐 Servidor Web
 
@@ -86,7 +87,8 @@
     cd diretorio-da-aplicação-local
     scp -r * usuario@ip-da-vm:/tmp
 
-![Git-Bash](imagens/git-bash.png) 🔺 _No meu caso, será utilizado apenas um HTML e CSS simples para exemplificar o seu funcionamento._
+![Git-Bash](imagens/git-bash.png)
+🔺 _No meu caso, será utilizado apenas um HTML e CSS simples para exemplificar o seu funcionamento._
 
 ### 2.1. Substituindo html do _Nginx_ pela aplicação recém transferida:
 
@@ -99,3 +101,4 @@
 ### Ao retornar ao navegador, com o IP da VM, já é possível visualizar a aplicação que substituimos.
 
 ![Web-App](imagens/web-app.png)
+![Web-App](imagens/web-app-mobile.jpeg)
