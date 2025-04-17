@@ -1,0 +1,182 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinamento</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Desapegue!</h3>
+      </div>
+      <div class="form-container">
+        <div class="formheader">
+          <p>formulário</p>
+        </div>
+        <div class="formbody">
+          <h1 class="form-title">Detalhe sua venda</h1>
+          <form action="">
+            <div class="box-input">
+              <label for="title"
+                >Título do anúncio <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Anuncie aqui"
+                required
+                minlength="1"
+                maxlength="20"
+              />
+            </div>
+            <div class="box-input">
+              <label for="brand"
+                >Marca <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="brand"
+                id="brand"
+                class="block"
+                placeholder="Digite a marca do veiculo!"
+                required
+              />
+            </div>
+            <div class="boxinput">
+              <label for="price"
+                >Preço <span class="required-field">*</span></label
+              >
+              <input
+                type="number"
+                name="price"
+                id="price"
+                class="block"
+                placeholder="Defina o preço"
+                required
+              />
+            </div>
+            <div class="box-input">
+              <label for="description"
+                >Descrição do Item <span class="required-field">*</span></label
+              ><textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Descrição"
+              ></textarea>
+            </div>
+            <p>Qualidade do item:</p>
+            <div class="optional-list">
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="optional[]"
+                    value="airbag"
+                  />
+                  <label for="airbag">Novo</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="optional[]"
+                    value="alarm"
+                  />
+                  <label for="alarm">Semi-Novo</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="optional[]"
+                    value="ac"
+                  />
+                  <label for="ac">Danos simples</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="checkbox"
+                    name="optional[]"
+                    value="reverse_camera"
+                  />
+                  <label for="reverse_camera">Danos severos</label>
+                </li>
+              </ul>
+            </div>
+            <div class="optional-list">
+              <ul>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="lane_assist"
+                    name="optional[]"
+                    value="lane_assist"
+                  />
+                  <label for="airbag">Na garantia</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="keyless"
+                    name="optional[]"
+                    value="keyless"
+                  />
+                  <label for="keyless">Precisa trocar peça específica</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="smartphone"
+                    name="optional[]"
+                    value="smartphone"
+                  />
+                  <label for="smartphone">Falta itens</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="letterseat"
+                    name="optional[]"
+                    value="letterseat"
+                  />
+                  <label for="letterseat">Outro</label>
+                </li>
+              </ul>
+            </div>
+            <div class="box-input">
+              <label for="description"
+                >Outro: <span class="required-field"></span></label
+              ><textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Descricao"
+              ></textarea>
+            </div>
+            <div class="box-input">
+              <label for="foto"
+                >Imagem do item: <span class="required-field">*</span></label
+              >
+              <input
+                type="file"
+                multiple
+                accept="image/png, image/jpg"
+                id="picture"
+                name="picture"
+                value="foto"
+              />
+            </div>
+
+            <input class="btn-submit" type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
