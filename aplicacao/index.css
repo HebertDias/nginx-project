@@ -1,3 +1,4 @@
+/* Reset básico para garantir que o estilo seja consistente */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +6,12 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* Definindo o fundo da página */
 body {
   background-color: #f0ebf8;
 }
 
+/* Estilo dos campos de input */
 input {
   border: none;
   border-bottom: 1px solid #ccc;
@@ -20,11 +23,12 @@ input[type="number"],
 input[type="file"],
 input[type="date"],
 textarea {
-  width: 100%; /* Alterado para 100% para se ajustar ao tamanho da tela */
-  padding: 10px 0px;
+  width: 100%; /* Garante que os campos ocupem toda a largura disponível */
+  padding: 10px 0;
   text-align: top;
 }
 
+/* Estilo do cabeçalho */
 .header {
   height: 160px;
   padding: 20px;
@@ -37,6 +41,7 @@ header h3 {
   margin-top: 0;
 }
 
+/* Estilo do formulário */
 .form-container {
   background-color: #fdfdfd;
   width: 60%;
@@ -46,6 +51,7 @@ header h3 {
   padding: 20px; /* Adicionando padding para deixar o conteúdo mais espaçado */
 }
 
+/* Cabeçalho do formulário */
 .formheader {
   border-bottom: 1px solid #dfdfdf;
   height: 45px;
@@ -61,6 +67,7 @@ header h3 {
   line-height: 45px;
 }
 
+/* Corpo do formulário */
 .formbody {
   padding: 30px;
 }
@@ -94,6 +101,7 @@ header h3 {
   list-style: none;
 }
 
+/* Estilo do botão de envio */
 .btn-submit {
   background-color: #673ab7;
   color: #fff;
@@ -112,11 +120,19 @@ header h3 {
 
 /* Media Queries para Responsividade */
 
+/* Quando a largura da tela for menor que 1024px (tablets) */
+@media screen and (max-width: 1024px) {
+  .form-container {
+    width: 80%; /* Ajusta o formulário para telas médias */
+    top: 0;
+  }
+}
+
 /* Quando a largura da tela for menor que 768px (telas de dispositivos móveis) */
 @media screen and (max-width: 768px) {
   .form-container {
     width: 90%; /* Aumenta a largura do formulário para ocupar mais espaço em telas menores */
-    top: 0; /* Remove a margem superior para centralizar o formulário */
+    top: 0;
   }
 
   input[type="text"],
